@@ -1,0 +1,35 @@
+{
+  "name": "scientific-figure-team",
+  "version": "0.2.3",
+  "description": "Python-first scientific figure team plugin for raw-data-gated MOF plotting, method-search-backed preprocessing, plan-confirmed figure generation, Chinese-commented code, Arial-first single-font plotting, gradient fills, QA, final rendered-image audit, and readability gates with subagents.",
+  "author": {
+    "name": "Owen xy Zhang"
+  },
+  "license": "MIT",
+  "keywords": [
+    "scientific-figure",
+    "research-plotting",
+    "matplotlib",
+    "publication-figures",
+    "subagents"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Scientific Figure Team",
+    "shortDescription": "Raw-data-gated MOF and scientific figure workflow.",
+    "longDescription": "A cross-platform research figure plugin that requires raw data for quantitative figures, searches literature or accepted processing methods before preprocessing, creates English pre-plot plans for confirmation, generates Python plotting code with Chinese inline explanations, uses Arial-first single-font typography, prefers subtle gradient fills, and runs publication figure QA.",
+    "developerName": "Owen xy Zhang",
+    "category": "Productivity",
+    "capabilities": [
+      "Analyze",
+      "Generate",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Turn my data into a publication-ready figure.",
+      "Convert this mechanism text into a figure plan.",
+      "Audit this Python figure code and outputs."
+    ],
+    "brandColor": "#2F6F73"
+  }
+}

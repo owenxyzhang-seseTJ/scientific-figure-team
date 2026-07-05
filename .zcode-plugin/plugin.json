@@ -1,0 +1,17 @@
+{
+  "name": "scientific-figure-team",
+  "version": "0.2.3",
+  "description": "Python-first scientific figure team plugin for raw-data-gated MOF plotting, method-search-backed preprocessing, plan-confirmed figure generation, Chinese-commented code, Arial-first single-font plotting, gradient fills, QA, final rendered-image audit, and readability gates with subagents. Works with Codex, Claude Code, WorkBuddy, CodeBuddy, ZCode, and tools following the Agent Skills pattern.",
+  "author": {
+    "name": "Owen xy Zhang"
+  },
+  "license": "MIT",
+  "keywords": [
+    "scientific-figure",
+    "research-plotting",
+    "matplotlib",
+    "publication-figures",
+    "subagents"
+  ],
+  "skills": "./skills/"
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "科研绘图专家团"
+  short_description: "强制原始数据、方法检索、英文图面、中文代码批注和 MOF 模板"
+  default_prompt: "Use $scientific-figure-team to require raw data, search accepted preprocessing methods, create an English figure plan for confirmation, generate Python plotting code with Chinese inline explanations, export publication-ready figures, and QA the result."
+  brand_color: "#2F6F73"

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+figure_job/
+test_figure_job/
+.tmp_*/
+*.zip

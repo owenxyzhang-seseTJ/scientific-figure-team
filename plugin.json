@@ -1,0 +1,152 @@
+{
+  "name": "scientific-figure-team",
+  "version": "0.2.3",
+  "description": "Python-first scientific figure team with lead and member agents for raw-data-gated MOF plotting, method-search-backed preprocessing, plan confirmation, Arial-first single-font plotting, gradient fills, QA, final rendered-image audit, and readability gates.",
+  "author": {
+    "name": "Owen xy Zhang",
+    "email": ""
+  },
+  "agents": [
+    "./agents/figure-team-lead.md",
+    "./agents/figure-task-router.md",
+    "./agents/figure-execution-planner.md",
+    "./agents/figure-python-plotter.md",
+    "./agents/figure-qa-reviewer.md",
+    "./agents/figure-image-final-auditor.md"
+  ],
+  "skills": [
+    "./skills/scientific-figure-team"
+  ],
+  "expertType": "team",
+  "agentName": "figure-team-lead",
+  "teamInfo": {
+    "leadAgent": "figure-team-lead",
+    "memberAgents": [
+      "figure-task-router",
+      "figure-execution-planner",
+      "figure-python-plotter",
+      "figure-qa-reviewer",
+      "figure-image-final-auditor"
+    ]
+  },
+  "displayName": {
+    "en": "Scientific Figure Team",
+    "zh": "科研绘图专家团"
+  },
+  "profession": {
+    "en": "Scientific Figure Team",
+    "zh": "科研绘图专家团"
+  },
+  "displayDescription": {
+    "en": "A Python-first subagent team for raw-data-gated MOF figures, method-search-backed preprocessing, English figure plans, Chinese-commented code, Arial-first typography, subtle gradient fills, QA, final rendered-image audit, and readability gates.",
+    "zh": "Python-first MOF 科研绘图团队：强制原始数据、方法检索、英文图面、中文代码批注、Arial 优先单字体、轻微渐变填色、投稿级 QA、渲染终审和可读性硬门槛。"
+  },
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "zh": "请提供数据、论文段落、机制说明、流程草稿或参考图，我会启动科研绘图团队。",
+    "en": "Share data, manuscript text, mechanism notes, workflow drafts, or style references to start the figure team."
+  },
+  "plugin": "scientific-figure-team",
+  "tags": [
+    {
+      "en": "Scientific Figures",
+      "zh": "科研绘图"
+    },
+    {
+      "en": "Python Plotting",
+      "zh": "Python 出图"
+    },
+    {
+      "en": "Publication QA",
+      "zh": "投稿级质检"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Make a paper figure from my dataset.",
+      "zh": "根据我的数据做一张论文图。"
+    },
+    {
+      "en": "Turn this mechanism text into a schematic.",
+      "zh": "把这段机制文字整理成示意图。"
+    },
+    {
+      "en": "Audit and polish this Python figure.",
+      "zh": "检查并优化这段 Python 绘图代码和图片。"
+    }
+  ],
+  "members": [
+    {
+      "id": "figure-team-lead",
+      "displayName": {
+        "en": "Figure Lead",
+        "zh": "图件总控"
+      },
+      "profession": {
+        "en": "Scientific Figure Workflow Lead",
+        "zh": "科研绘图流程总控"
+      },
+      "role": "lead"
+    },
+    {
+      "id": "figure-task-router",
+      "displayName": {
+        "en": "Task Router",
+        "zh": "任务分流员"
+      },
+      "profession": {
+        "en": "Figure Task Router",
+        "zh": "绘图任务分流员"
+      },
+      "role": "member"
+    },
+    {
+      "id": "figure-execution-planner",
+      "displayName": {
+        "en": "Execution Planner",
+        "zh": "执行包规划员"
+      },
+      "profession": {
+        "en": "Figure Execution Planner",
+        "zh": "出图执行包规划员"
+      },
+      "role": "member"
+    },
+    {
+      "id": "figure-python-plotter",
+      "displayName": {
+        "en": "Python Plotter",
+        "zh": "Python 出图员"
+      },
+      "profession": {
+        "en": "Matplotlib Figure Engineer",
+        "zh": "Matplotlib 绘图工程师"
+      },
+      "role": "member"
+    },
+    {
+      "id": "figure-qa-reviewer",
+      "displayName": {
+        "en": "Figure QA",
+        "zh": "图件质检员"
+      },
+      "profession": {
+        "en": "Publication Figure QA Reviewer",
+        "zh": "投稿级图件质检员"
+      },
+      "role": "member"
+    },
+    {
+      "id": "figure-image-final-auditor",
+      "displayName": {
+        "en": "Image Final Auditor",
+        "zh": "终稿看图审核员"
+      },
+      "profession": {
+        "en": "Rendered Figure QA Auditor",
+        "zh": "渲染图终审员"
+      },
+      "role": "member"
+    }
+  ]
+}
