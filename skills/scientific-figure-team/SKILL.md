@@ -1,6 +1,17 @@
 ---
 name: scientific-figure-team
-description: Python-first scientific figure workflow with subagent-style roles for raw-data-gated quantitative plotting, literature/method-search-backed preprocessing, English pre-plot plan confirmation, publication-ready matplotlib/seaborn outputs, Chinese inline explanations on visual-affecting Python code, QA, final rendered-image audit, and readability gates for MOF plots including PXRD, TGA, gas adsorption, Qst, IAST, breakthrough curves, mechanism schematics, workflow diagrams, multi-panel paper figures, figure redesigns, text-overlap fixes, small-font fixes, and unclear figure repair. Use when the user asks for 科研绘图, MOF 绘图, PXRD, 热重, 气体吸附, Qst, IAST, 穿透曲线, 论文图表, 论文配图, 出图, Python plotting, publication figures, mechanism figures, chart selection, figure polish, text overlap, 字体太小, 文字重叠, 图不清晰, or journal-ready SVG/PDF/TIFF outputs.
+description: >-
+  Python-first scientific figure workflow: raw-data-gated quantitative
+  plotting, literature/method-search-backed preprocessing, English pre-plot
+  plan confirmation, publication-ready matplotlib/seaborn outputs with
+  Chinese inline explanations, QA, and final rendered-image audit. Covers
+  MOF plots (PXRD, TGA, gas adsorption, Qst, IAST, breakthrough curves),
+  mechanism schematics, workflow diagrams, multi-panel paper figures,
+  figure redesigns, and text-overlap / small-font / unclear-figure repair.
+  Use when the user asks for 科研绘图, MOF 绘图, PXRD, 热重, 气体吸附, Qst,
+  IAST, 穿透曲线, 论文图表, 论文配图, 出图, Python plotting, publication
+  figures, mechanism figures, chart selection, figure polish, text overlap,
+  字体太小, 文字重叠, 图不清晰, or journal-ready SVG/PDF/TIFF outputs.
 ---
 
 # Scientific Figure Team
