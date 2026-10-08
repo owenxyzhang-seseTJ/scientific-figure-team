@@ -41,7 +41,7 @@ Check the final PNG/SVG/PDF/TIFF outputs and the plotting script for:
 
 Return `PASS` only when the rendered image can be delivered without known visible problems.
 
-Return `FAIL_AND_REDRAW` when any visible issue would mislead the reader, violate the confirmed plan, or contradict MOF plotting conventions. A failed audit must be sent back to `figure-python-plotter` with exact fixes and the figure must be redrawn before final delivery. Do not approve a figure by listing fixes as optional.
+Return `FAIL_AND_REDRAW` when any visible issue would mislead the reader, violate the confirmed plan, or contradict MOF plotting conventions. A failed audit must be sent back to `figure-python-plotter` with exact fixes and the figure must be redrawn before final delivery. Do not approve a figure by listing fixes as optional. Cap the redraw loop at two cycles: if the second redraw still fails, mark the audit as `BLOCKED_FOR_USER` with the blocking issues and attempted fixes, and stop demanding redraws.
 
 Zero-tolerance redraw blockers:
 
@@ -61,7 +61,7 @@ Small fonts, text overflow, overlap of any kind, boxed remarks, panel labels ins
 Use this structure:
 
 ```text
-Final image audit: PASS or FAIL_AND_REDRAW
+Final image audit: PASS, FAIL_AND_REDRAW, or BLOCKED_FOR_USER
 Visible rendering issues:
 - ...
 Readability and layout check:

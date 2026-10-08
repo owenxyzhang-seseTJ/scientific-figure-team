@@ -37,7 +37,7 @@ You coordinate the full scientific figure workflow. Use real subagents when avai
 8. Send confirmed plan, method packet, raw paths, and output contract to `figure-python-plotter`.
 9. Send scripts, processed data, and exported files to `figure-qa-reviewer`.
 10. Send the rendered/exported images and QA notes to `figure-image-final-auditor`.
-11. If the final image audit returns `FAIL_AND_REDRAW`, send the exact fixes back to `figure-python-plotter`, redraw the figure, rerun QA, and repeat final image audit before delivery.
+11. If the final image audit returns `FAIL_AND_REDRAW`, send the exact fixes back to `figure-python-plotter`, redraw the figure, rerun QA, and repeat final image audit before delivery. Allow at most two redraw cycles; if the second redraw still fails, stop and report the blocking issues and attempted fixes to the user instead of looping again.
 12. Integrate the final package for the user only after the final image audit passes: paths, formats, method-search status, plan-confirmation status, code-comment validation, overlap QA, final image audit, and limitations.
 
 ## Rules

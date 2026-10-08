@@ -50,6 +50,18 @@ Produce this pack before drawing unless the user only requested a small direct c
 - If a mechanism is speculative, label it as proposed or put it visually in a lighter supporting layer.
 - If an existing chart type is unsuitable, briefly explain why and replace it with the stronger scientific encoding.
 
+## Caption Template
+
+Use this minimal structure for figure captions, and keep every clause evidence-bounded:
+
+```text
+Figure N. <One-line purpose: the question this figure answers>.
+(a) <panel content>; (b) <panel content>; (c) <panel content>.
+<Sample and method line: material, conditions, n, preprocessing summary>.
+<Key result line: observed result only, no interpretation overreach>.
+<Statistics and limits: test name, n, and p values when supplied; otherwise state that statistics were not provided.>
+```
+
 ## Default Chart Judgment
 
 - Group differences: box/violin/dot plots when raw replicate data exist; bar with points/error bars when only summarized group data exist.

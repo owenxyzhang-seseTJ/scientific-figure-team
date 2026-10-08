@@ -44,6 +44,7 @@ Use this before final delivery or when auditing an existing figure.
 - Run `scripts/audit_rendered_figure.py` on exported SVG files and plotting scripts when available; treat failures as redraw blockers.
 - Treat overlap and overflow as zero-tolerance failures: no text-text, text-legend, text-data, text-axis, text-tick, text-image, or guide-line/text overlap; no clipped, cropped, outside-canvas, or edge-crowded labels.
 - If the final image audit returns `FAIL_AND_REDRAW`, send exact required fixes back to the Python plotter, redraw, rerun overlap/export checks, and repeat the final image audit.
+- Cap the redraw loop at two cycles; after a second failed redraw, stop and escalate the blocking issues and attempted fixes to the user instead of redrawing again.
 - Do not deliver a final quantitative figure with a failed rendered-image audit unless the user explicitly accepts a documented blocker.
 
 ## Python And Export

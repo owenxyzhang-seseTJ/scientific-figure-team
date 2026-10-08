@@ -54,6 +54,10 @@ When subagents or team tools are available, the lead agent should dispatch these
 
 If subagents are unavailable, perform the same stages explicitly in separate sections and keep the role boundaries intact.
 
+Cap the redraw loop: when `figure-image-final-auditor` returns `FAIL_AND_REDRAW`, allow at most two redraw cycles. If the second redraw still fails, stop and report the blocking issues and attempted fixes to the user instead of silently looping.
+
+If matplotlib, seaborn, or the bundled scripts cannot run in the current runtime, perform the equivalent checks manually from `references/qa-checklist.md`, and record the skipped automated checks in the QA report.
+
 ## Routing Defaults
 
 - Data/result figures: require raw machine-readable data, method search, preprocessing rationale, and a confirmed English plan before plotting.
@@ -73,6 +77,7 @@ Open only the references needed for the current task:
 - `references/figure-contract.md`: use for routing, execution-pack structure, and figure contract details.
 - `references/method-search-and-preprocessing.md`: always use before preprocessing quantitative raw data.
 - `references/mof-templates.md`: use for PXRD, TGA, gas adsorption, Qst, IAST, breakthrough, and common MOF plots.
+- `references/chart-quickstart.md`: use for general non-MOF charts (bar, box/violin, heatmap, scatter with fit, time series).
 - `references/style-system.md`: use when choosing palette, layout, panel style, or matching the default reference-image aesthetic.
 - `references/python-code-comment-rules.md`: always use before writing or modifying plotting code.
 - `references/qa-checklist.md`: use before final delivery, especially when exporting figures or reviewing existing code.

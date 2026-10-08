@@ -36,6 +36,26 @@ PALETTE = {
 }
 ```
 
+When the target journal, the user, or the figure's audience requires colorblind-safe encoding, switch semantic colors to this Okabe-Ito-based variant and keep the same color semantics across panels:
+
+```python
+PALETTE_COLORBLIND_SAFE = {
+    "simulated": "#666666",
+    "as_synthesized": "#0072B2",
+    "solvent_exchanged": "#009E73",
+    "activated": "#E69F00",
+    "hero": "#56B4E9",
+    "hero_soft": "#D8ECF7",
+    "accent": "#D55E00",
+    "accent_soft": "#F4D4C4",
+    "positive": "#009E73",
+    "negative": "#CC79A7",
+    "ink": "#27323A",
+    "muted": "#70777F",
+    "panel_bg": "#F7FAF8"
+}
+```
+
 Keep semantic meaning stable across panels. Do not use rainbow colormaps for scientific emphasis unless the data are genuinely cyclic/spectral and the mapping is documented.
 
 ## Layout Rules

@@ -100,6 +100,7 @@ python3 skills/scientific-figure-team/scripts/audit_rendered_figure.py path/to/f
 ```text
 ./demo_mof_templates
 ./demo_general_figure
+./demo_statistical_figures
 ```
 
 PNG 预览：
@@ -111,8 +112,11 @@ PNG 预览：
 - `demo_mof_templates/outputs/iast.png`
 - `demo_mof_templates/outputs/breakthrough.png`
 - `demo_general_figure/outputs/figure_demo.png`
+- `demo_statistical_figures/outputs/boxplot_co2_uptake.png`
+- `demo_statistical_figures/outputs/grouped_boxplot_breakthrough_time.png`
+- `demo_statistical_figures/outputs/violinplot_crystal_size.png`
 
-每个 MOF demo 同时包含 SVG/PDF、`*_overlap_report.txt` 和 `final_image_audit_report.md`；通用 demo 包含 SVG/PDF/PNG 和 `final_image_audit_report.md`；实际模板运行时仍会导出 TIFF。
+每个 MOF demo 同时包含 SVG/PDF、`*_overlap_report.txt` 和 `final_image_audit_report.md`；通用 demo 包含 SVG/PDF/PNG 和 `final_image_audit_report.md`；统计图 demo 额外展示箱线图（含误差棒）和小提琴图流程，包含 raw/processed CSV、SVG/PDF/TIFF/PNG 和最终审图报告；实际模板运行时仍会导出 TIFF。
 
 ### 验证状态
 
@@ -121,6 +125,7 @@ PNG 预览：
 - 通用脚手架和 MOF 模板脚本通过中文视觉批注检查。
 - 本机已检测到 Arial，MOF 与通用 demo SVG 的普通文字、数字和上下标均统一为 Arial；若运行环境没有 Arial，模板会统一回退到 DejaVu Sans。
 - 通用 demo 的面积填色已改为轻微渐变，并通过渲染可读性审计。
+- 已新增统计图 demo，覆盖箱线图（含均值 ± SD 误差棒）、分组箱线图和小提琴图，并保持原始点可见。
 - PXRD、TGA、adsorption、Qst、IAST、breakthrough 预处理测试通过。
 - 未确认 `figure_plan.md` 时拒绝绘图；坏 `method_search_packet.md` 时拒绝预处理。
 - 已用临时 venv 安装 matplotlib 并生成 6 类 MOF demo 图和 1 个通用 demo 图。
